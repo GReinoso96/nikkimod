@@ -55,18 +55,22 @@ class NMWorldControl : EventHandler {
 	}
 	
 	void DoDropCoins(int amount, actor dropper) {
-		int totalLeft = amount;
-		while(totalLeft>=100){
-			dropper.A_DropItem("NMDiamond", -1, 256);
-			totalLeft -= 100;
-		}
-		while(totalLeft>=10){
-			dropper.A_DropItem("NMCoin10", -1, 256);
-			totalLeft -= 10;
-		}
-		while(totalLeft>=1){
-			dropper.A_DropItem("NMCoin", -1, 256);
-			totalLeft -= 1;
+		if(nm_dropcoins) {
+			int totalLeft = amount;
+			while(totalLeft>=100){
+				dropper.A_DropItem("NMDiamond", -1, 256);
+				totalLeft -= 100;
+			}
+			while(totalLeft>=10){
+				dropper.A_DropItem("NMCoin10", -1, 256);
+				totalLeft -= 10;
+			}
+			while(totalLeft>=1){
+				dropper.A_DropItem("NMCoin", -1, 256);
+				totalLeft -= 1;
+			}
+		} else {
+			dropper.target.giveinventory("NMCoin", amount);
 		}
 	}
 	

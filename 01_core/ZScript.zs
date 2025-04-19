@@ -1,11 +1,11 @@
 version "4.12"
 
-#include "ZScript/NM/HealthArmor.txt"
-#include "ZScript/NM/Coins.txt"
-#include "ZScript/NM/Props.txt"
+#include "ZScript/NM/HealthArmor.zs"
+#include "ZScript/NM/Coins.zs"
+#include "ZScript/NM/Props.zs"
 
-#include "ZScript/NM/LevelProcessor.txt"
-#include "ZScript/NM/WorldHandlers.txt"
+#include "ZScript/NM/LevelProcessor.zs"
+#include "ZScript/NM/WorldHandlers.zs"
 
 // Constants
 const nm_debug = 0;

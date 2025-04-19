@@ -1,0 +1,1 @@
+server bool nm_dropcoins = true;
