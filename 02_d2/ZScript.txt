@@ -1,0 +1,7 @@
+version "4.12"
+
+#include "ZScript/NMD2/LevelProcessor.txt"
+#include "ZScript/NMD2/WorldHandlers.txt"
+
+// Constants
+const nm_d2_debug = 0;

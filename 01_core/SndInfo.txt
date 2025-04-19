@@ -1,0 +1,7 @@
+$random nmod/coin { nmod/coin1 nmod/coin2 }
+
+nmod/coin1 "Sounds/Coin01.ogg"
+nmod/coin2 "Sounds/Coin02.ogg"
+
+nmod/ding "Sounds/Ding.ogg"
+nmod/deny "Sounds/Deny.ogg"

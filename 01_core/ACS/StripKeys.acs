@@ -1,0 +1,20 @@
+#library "keystrip"
+#include "zcommon.acs"
+
+Script 1 RETURN {
+	TakeInventory("YellowCard", 99);
+	TakeInventory("RedCard", 99);
+	TakeInventory("BlueCard", 99);
+	TakeInventory("YellowSkull", 99);
+	TakeInventory("RedSkull", 99);
+	TakeInventory("BlueSkull", 99);
+}
+
+Script 2 ENTER {
+	TakeInventory("YellowCard", 99);
+	TakeInventory("RedCard", 99);
+	TakeInventory("BlueCard", 99);
+	TakeInventory("YellowSkull", 99);
+	TakeInventory("RedSkull", 99);
+	TakeInventory("BlueSkull", 99);
+}

@@ -1,0 +1,30 @@
+include "EpisodeInfo/Doom2.txt"
+
+GameInfo
+{
+    AddEventHandlers = "NMD2WorldControl"
+}
+
+adddefaultmap
+{
+	AllowRespawn
+	rememberstate
+}
+
+map MAP50 "Nexus"
+{
+	next = "MAP50"
+	secretnext = "MAP50"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 0
+	music = ""
+	NoIntermission
+}
+
+clearepisodes
+episode map50
+{
+	name = "Nexus"
+	key = "n"
+}

@@ -1,0 +1,28 @@
+GameInfo
+{
+    AddEventHandlers = "NMWorldControl"
+	StatusBarClass = "debughud"
+}
+
+doomednums {
+	130 = "NMArmor5"
+	131 = "NMArmor10"
+	135 = "NMHealth5"
+	136 = "NMHealth10"
+	8060 = "NMShopAmmoBox"
+	8061 = "NMShopAmmoClip"
+	8062 = "NMShopShellBox"
+	8063 = "NMShopShells"
+	8064 = "NMShopHealthUp"
+	8080 = "NMShopShotgun"
+	8081 = "NMShopSuperShotgun"
+	8082 = "NMShopChaingun"
+	8083 = "NMShopRocketLauncher"
+	8084 = "NMShopPlasmaRifle"
+	8085 = "NMShopBFG"
+	8086 = "NMShopIncinerator"
+	8087 = "NMShopCalamityBlade"
+	8088 = "NMShopArmorGreen"
+	8089 = "NMShopArmorBlue"
+	8090 = "NMShopArmorRed"
+}
