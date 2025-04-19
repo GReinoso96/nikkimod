@@ -36,6 +36,7 @@ class ShopProp : Actor
 				
 				drop = dropList = GetDropItems();
 				if(dropList != null){
+					user.A_Print("Purchased!");
 					user.A_StartSound("nmod/ding", CHAN_ITEM, CHANF_UI);
 					while(dropList != null) {
 						user.A_GiveInventory(dropList.name, dropList.amount);
@@ -44,6 +45,7 @@ class ShopProp : Actor
 					return true;
 				}
 			} else {
+				user.A_Print("Not enough cash!");
 				user.A_StartSound("nmod/deny", CHAN_ITEM, CHANF_UI);
 			}
 		}
