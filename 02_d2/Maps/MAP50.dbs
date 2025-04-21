@@ -7,9 +7,9 @@ maps
 	
 	MAP50
 	{
-		defaultwalltexture = "textures/-noflat-.png";
+		defaultwalltexture = "GRAY5";
 		overridemiddletexture = false;
-		defaultceiltexture = "textures/-noflat-.png";
+		defaultceiltexture = "CEIL3_3";
 		overrideceiltexture = false;
 		custombrightness = 196;
 		scriptcompiler = "zdoom_acs.cfg";
@@ -36,9 +36,19 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource2
+			{
+				type = 1;
+				location = "F:\\gzdoom\\nikkimod\\02_d2";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
-		viewpositiony = -49.13894f;
-		viewpositionx = 207.2579f;
+		viewpositiony = -167.5044f;
+		viewpositionx = -284.7456f;
 		
 		testprecommand
 		{
@@ -62,7 +72,7 @@ maps
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 1.22621f;
+		viewscale = 1.594072f;
 		
 		reloadresourceprecommand
 		{
@@ -70,10 +80,10 @@ maps
 			exitcodeiserror = true;
 			stderriserror = true;
 		}
-		defaulttoptexture = "textures/-noflat-.png";
+		defaulttoptexture = "GRAY5";
 		overridebottomtexture = false;
-		defaultbottomtexture = "textures/-noflat-.png";
-		defaultfloortexture = "textures/-noflat-.png";
+		defaultbottomtexture = "GRAY5";
+		defaultfloortexture = "CEIL5_2";
 		overrideceilheight = false;
 		overridebrightness = false;
 		
@@ -93,6 +103,30 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 340;
+				activetab = true;
+			}
 		}
 	}
 }

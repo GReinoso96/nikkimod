@@ -3,7 +3,7 @@ Class NMCoin : Inventory {
 		+DROPPED
 		+NOTDMATCH
 		+FLOORCLIP
-		+INVENTORY.INVBAR
+		//+INVENTORY.INVBAR
 		+INVENTORY.ALWAYSPICKUP
 		//Inventory.Amount 1;
 		Inventory.InterHubAmount 0x7fffffff;

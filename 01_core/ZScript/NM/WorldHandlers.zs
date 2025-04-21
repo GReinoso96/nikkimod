@@ -54,6 +54,7 @@ class NMWorldControl : EventHandler {
 		}
 	}
 	
+	// Drops coins from a dead monster, or gives them to the killer
 	void DoDropCoins(int amount, actor dropper) {
 		if(nm_dropcoins) {
 			int totalLeft = amount;
@@ -69,7 +70,7 @@ class NMWorldControl : EventHandler {
 				dropper.A_DropItem("NMCoin", -1, 256);
 				totalLeft -= 1;
 			}
-		} else {
+		} else if(dropper.target) {
 			dropper.target.giveinventory("NMCoin", amount);
 		}
 	}

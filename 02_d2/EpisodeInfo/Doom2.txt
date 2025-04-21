@@ -5,6 +5,8 @@ defaultmap
 	
 }
 
+// The Starport
+
 map MAP01 lookup "HUSTR_1"
 {
 	titlepatch = "CWILV00"
@@ -119,6 +121,8 @@ map MAP11 lookup "HUSTR_11"
 	needclustertext
 }
 
+// The City
+
 map MAP12 lookup "HUSTR_12"
 {
 	titlepatch = "CWILV11"
@@ -210,6 +214,8 @@ map MAP20 lookup "HUSTR_20"
 	music = "$MUSIC_MESSAG"
 	needclustertext
 }
+
+// Hell
 
 map MAP21 lookup "HUSTR_21"
 {

@@ -28,3 +28,10 @@ episode map50
 	name = "Nexus"
 	key = "n"
 }
+
+doomednums {
+	8200 = "NMD2TeleportNexus"
+	8201 = "NMD2TeleportReturn"
+	8202 = "NMD2MAP01Prop"
+	8203 = "NMD2MAP02Prop"
+}
