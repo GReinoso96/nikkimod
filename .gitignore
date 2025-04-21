@@ -1,5 +1,5 @@
 rel/
-autosave*
-backup*
-.dbs
+*/*autosave*
+*/*backup*
+*/*.dbs
 .exe
