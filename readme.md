@@ -20,3 +20,7 @@ To run the mod, you must first load 01_core, then the 02_ folder corresponding t
 Additionally, some assets from the Freedoom project are included, see `01_core\Freedoom.COPYING.txt` for Freedoom's copyright notice.
 
 Doom and all its assets are property of their current holders.
+
+Doom assets used:
+
+* Skull chest from the vaults.

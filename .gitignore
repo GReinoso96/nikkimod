@@ -5,3 +5,4 @@ rel/
 *.exe
 *.bat
 .vscode/tasks.json
+.vscode
