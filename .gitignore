@@ -1,5 +1,7 @@
 rel/
-*/*autosave*
-*/*backup*
-*/*.dbs
-.exe
+*autosave*
+*backup*
+*.dbs
+*.exe
+*.bat
+.vscode/tasks.json

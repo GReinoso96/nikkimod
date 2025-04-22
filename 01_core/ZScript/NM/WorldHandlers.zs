@@ -15,12 +15,27 @@ class NMWorldControl : EventHandler {
 	
 	override void WorldThingSpawned(WorldEvent e) {
 		if(e.thing.bIsMonster){
+			// No extra coins
+			e.thing.stamina = 0;
 			// Nightmare Monsters
-			if(random(1,100) <= CalcLuck() && e.thing.GetRenderStyle() != STYLE_OptFuzzy){
-				e.thing.A_SetRenderStyle(e.thing.alpha, STYLE_Subtract);
-				e.thing.A_SetHealth(abs(e.thing.health*1.6));
-				e.thing.bMissileMore = true;
-				e.thing.speed = (abs(e.thing.speed*1.6));
+			// Fuzzy monsters shouldn't be modified
+			if(e.thing.GetRenderStyle() != STYLE_OptFuzzy || e.thing.GetRenderStyle() != STYLE_Fuzzy) {
+				if(random(1,100) <= CalcLuck()) {
+					e.thing.A_SetRenderStyle(e.thing.alpha, STYLE_Subtract);
+					e.thing.A_SetHealth(abs(e.thing.health * 1.6));
+					e.thing.bMissileMore = true;
+					e.thing.stamina = abs(e.thing.health * 0.5);
+					e.thing.speed = abs(e.thing.speed * 1.6);
+				}
+				// Boss monsters can't be ironwall
+				else if(random(1,100) <= CalcLuck() && !e.thing.bBoss) {
+					// Iron Monsters
+					e.thing.A_SetTranslation("ironwall");
+					e.thing.A_SetHealth(abs(e.thing.health * 2.0));
+					e.thing.painchance = 0;
+					e.thing.speed = abs(e.thing.speed * 0.7);
+					e.thing.stamina = abs(e.thing.health * 0.8);
+				}
 			}
 		}
 	}
@@ -40,14 +55,14 @@ class NMWorldControl : EventHandler {
 				
 				// Melee Bonus - Half of the normal coin reward
 				if(pweap != null && pweap.bMeleeWeapon == true) {
-					killer.A_Print("Melee Bonus!");
-					int bonus = ceil(maxHealth/2);
+					int bonus = ceil(maxHealth * 0.7);
+					killer.A_Print("Melee Bonus! +" .. bonus);
 					DoDropCoins(bonus, e.thing);
 				}
 				
-				if(e.thing.GetRenderStyle() == STYLE_Subtract) {
-					killer.A_Print("Nightmare Bonus!");
-					int bonus = ceil(maxHealth/1.5);
+				if(e.thing.stamina != 0.0) {
+					int bonus = e.thing.stamina;
+					killer.A_Print("Special Monster Bonus! +" .. bonus);
 					DoDropCoins(bonus, e.thing);
 				}
 			}

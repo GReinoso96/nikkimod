@@ -20,9 +20,11 @@ class NMHUD : DoomStatusBar {
 			}
 		}
 		if(state == HUD_StatusBar) {
-			DrawString(nmfont, "Gold: " .. CPlayer.mo.CountInv('NMCoin'), (8,140), DI_TEXT_ALIGN_LEFT, Font.CR_Gold);
+			DrawImage("SCO2A0", (CVar.GetCvar('nm_goldbarx', CPlayer).GetInt(), CVar.GetCvar('nm_goldbary', CPlayer).GetInt()), DI_ITEM_OFFSETS);
+			DrawString(nmfont, FormatNumber(CPlayer.mo.CountInv('NMCoin')), (CVar.GetCvar('nm_goldbarx', CPlayer).GetInt()+18, CVar.GetCvar('nm_goldbary', CPlayer).GetInt()-4), DI_TEXT_ALIGN_LEFT, Font.CR_Gold);
 		} else if (state == HUD_Fullscreen) {
-			DrawString(nmfont, "Gold: " .. CPlayer.mo.CountInv('NMCoin'), (6,-64), DI_SCREEN_LEFT_BOTTOM|DI_TEXT_ALIGN_LEFT, Font.CR_Gold);
+			DrawImage("SCO2A0", (CVar.GetCvar('nm_goldfullx', CPlayer).GetInt(), CVar.GetCvar('nm_goldfully', CPlayer).GetInt()), DI_ITEM_OFFSETS);
+			DrawString(nmfont, FormatNumber(CPlayer.mo.CountInv('NMCoin')), (CVar.GetCvar('nm_goldfullx', CPlayer).GetInt()+18,CVar.GetCvar('nm_goldfully', CPlayer).GetInt()-4), DI_SCREEN_LEFT_BOTTOM|DI_TEXT_ALIGN_LEFT, Font.CR_Gold);
 		}
 	}
 }
