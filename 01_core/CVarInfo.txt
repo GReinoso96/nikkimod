@@ -1,5 +1,9 @@
 server bool nm_dropcoins = true;
+
 user int nm_goldbarx = 8;
 user int nm_goldbary = 164;
 user int nm_goldfullx = 16;
 user int nm_goldfully = -46;
+
+user int nm_ammobarx = 249;
+user int nm_ammobary = 168;

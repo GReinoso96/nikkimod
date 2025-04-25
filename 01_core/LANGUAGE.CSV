@@ -1,0 +1,52 @@
+default,Identifier,Remarks,eng enc ena enz eni ens enj enb enl ent enw,es esm
+,,Coins,,
+Coins,NM_COIN,,,Monedas
+10 Coins,NM_COIN10,,,Diez monedas
+Diamond,NM_COIN100,,,Diamante
+You got a coin.,NM_PICK_COIN,,,Obtuviste una moneda.
+You got 10 coins,NM_PICK_COIN10,,,Obtuviste diez monedas.
+You got a diamond! (100 coins),NM_PICK_COIN100,,,¡Obtuviste un diamante! (Diez monedas)
+,,Health and Armor,,
+Armor Shard,NM_ARMORSHARD,,,Parche de armadura
+Amor Piece,NM_ARMORPIECE,,,Trozo de armadura
+Super Armor,NM_SUPERARMOR,,,Super Armadura
+Picked up an armor shard.,NM_PICK_ARMORSHARD,,,Obtuviste un parche de armadura.
+Picked up an armor piece.,NM_PICK_ARMORPIECE,,,Obtuviste un trozo de armadura.
+Picked up the Super Armor!,NM_PICK_SUPERARMOR,,,¡Obtuviste la super-armadura!
+,,,,
+Great Health Bonus,NM_HEALTH5,,,Gran bonificación de vida
+Super Health Bonus,NM_HEALTH10,,,Super bonificación de vida
+Picked up a great health bonus.,NM_PICK_HEALTH5,,,Obtuviste una gran bonificación de vida.
+Picked up a super health bonus.,NM_PICK_HEALTH10,,,Obtuviste una super bonificación de vida.
+,,,,
+,,Shop Items,,
+Press 'Use' to spend.,NM_SHOP_SPEND,,,Presiona 'usar' para gastar.
+Press 'Use' to return to the previous map.,NM_SHOP_RETURN,,,Presiona 'usar' para volver al mapa anterior.
+Press 'Use' to return to Nexus.,NM_SHOP_NEXUS,,,Presiona 'usar' para volver al nexo.
+Press 'Use' to travel to,NM_SHOP_TRAVEL,,,Presiona 'usar' para viajar a
+This level has not been unlocked yet.,NM_SHOP_NOLEVEL,,,Este nivel no se ha desbloqueado aún.
+Clear the previous level first!,NM_SHOP_PREVCLEAR,,,¡Debes terminar el nivel anterior primero!
+Purchased!,NM_SHOP_PURCHASED,,,¡Comprado!
+Not enough cash!,NM_SHOP_BROKE,,,¡No tienes suficiente dinero!
+Health Bonus,NM_SHOP_HEALTHBONUS,,,Bonificación de vida
+Green Armor - 40% Protection,NM_SHOP_ARMOR1,,,Armadura verde - 40% de protección
+Blue Armor - 50% Protection,NM_SHOP_ARMOR2,,,Armadura azúl - 50% de protección
+Super Armor - 70% Protection,NM_SHOP_ARMOR3,,,Super armadura - 70% de protección
+,,,,
+,,Satchels,,
+Ammo Satchel,NM_SATCHEL,,,Bandolera de munición
+Got an ammo pack! +10 max ammo.,NM_PICK_SATCHEL,,,¡Obtuviste un paquete de municiónes! +10 máximo de munición.
+,,,,
+,,Bonus,,
+Melee Bonus!,NM_BONUS_MELEE,,,¡Bonificación por melee!
+Special Monster Bonus!,NM_BONUS_MONSTER,,,¡Bonificación por monstruo especial!
+,,,,
+,,HUD,,
+BULL,NM_HUD_BULLETS,,,BALA
+SHEL,NM_HUD_SHELLS,,,PERD
+RCKT,NM_HUD_ROCKETS,,,COHE
+CELL,NM_HUD_CELLS,,,CELD
+FUEL,NM_HUD_FUEL,,,GASO
+,,,,
+,,Maps,,
+Nexus,NM_MAP_NEXUS,,,Nexo

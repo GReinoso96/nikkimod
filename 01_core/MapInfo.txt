@@ -5,6 +5,7 @@ GameInfo
 }
 
 doomednums {
+	8 = "NMSatchel"
 	130 = "NMArmor5"
 	131 = "NMArmor10"
 	135 = "NMHealth5"

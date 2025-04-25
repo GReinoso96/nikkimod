@@ -39,12 +39,34 @@ class NMD2WorldControl : EventHandler {
 		let spec = e.activatedline.special;
 		// Catch exit specials
 		if (ply && (spec == 243 || spec == 244)) {
-			if(Level.mapname == "MAP02"){
-				for(int i = 0; i < 8; i++){
-					if(PlayerInGame[i]){
-						players[i].mo.giveinventory("NMD2MAP02Unlock", 1);
-					}
-				}
+			if(Level.mapname == "MAP01"){
+				GiveEveryone('NMD2MAP01Unlock', 1);
+			} else if(Level.mapname == "MAP02"){
+				GiveEveryone('NMD2MAP02Unlock', 1);
+			} else if(Level.mapname == "MAP03"){
+				GiveEveryone('NMD2MAP03Unlock', 1);
+			} else if(Level.mapname == "MAP04"){
+				GiveEveryone('NMD2MAP04Unlock', 1);
+			} else if(Level.mapname == "MAP05"){
+				GiveEveryone('NMD2MAP05Unlock', 1);
+			} else if(Level.mapname == "MAP06"){
+				GiveEveryone('NMD2MAP06Unlock', 1);
+			} else if(Level.mapname == "MAP07"){
+				GiveEveryone('NMD2MAP07Unlock', 1);
+			} else if(Level.mapname == "MAP09"){
+				GiveEveryone('NMD2MAP09Unlock', 1);
+			} else if(Level.mapname == "MAP10"){
+				GiveEveryone('NMD2MAP10Unlock', 1);
+			} else if(Level.mapname == "MAP11"){
+				GiveEveryone('NMD2MAP11Unlock', 1);
+			}
+		}
+	}
+
+	void GiveEveryone(Class<Inventory> item, int amount = 0) {
+		for(int i = 0; i < 8; i++){
+			if(PlayerInGame[i]){
+				players[i].mo.giveinventory(item, amount);
 			}
 		}
 	}

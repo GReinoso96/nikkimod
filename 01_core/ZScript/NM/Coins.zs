@@ -8,9 +8,9 @@ Class NMCoin : Inventory {
 		//Inventory.Amount 1;
 		Inventory.InterHubAmount 0x7fffffff;
 		Inventory.MaxAmount 0x7fffffff;
-		Tag "Coins";
+		Tag "$NM_COIN";
 		Inventory.Icon "COINA0";
-		Inventory.PickupMessage "Got a coin!";
+		Inventory.PickupMessage "$NM_PICK_COIN";
 		Inventory.PickUpSound "nmod/coin";
 	}
 	States {
@@ -25,7 +25,8 @@ Class NMCoin : Inventory {
 Class NMCoin10 : NMCoin {
 	Default {
 		Inventory.Amount 0;
-		Inventory.PickupMessage "Got 10 coins!";
+		Tag "$NM_COIN10";
+		Inventory.PickupMessage "$NM_PICK_COIN10";
 		Translation "0:255=%[0.00,0.00,0.00]:[0.02,0.97,0.40]";
 	}
 	override bool TryPickup (in out Actor toucher) {
@@ -38,7 +39,8 @@ Class NMCoin10 : NMCoin {
 Class NMDiamond : NMCoin {
 	Default {
 		Inventory.Amount 0;
-		Inventory.PickupMessage "Got 100 coins!";
+		Tag "$NM_COIN100";
+		Inventory.PickupMessage "$NM_PICK_COIN100";
 	}
 	States {
 		Spawn:

@@ -11,6 +11,12 @@ A mod for GZDoom that:
 
 To run the mod, you must first load 01_core, then the 02_ folder corresponding to the IWAD or mapset you want to play.
 
+## Special options
+
+For now, these can only be changed through the console.
+
+* nm_dropcoins = True or False, when True, monsters will drop coins instead of them going directly to your inventory.
+
 ## Credits
 
 * All developers and contributors of GZDoom.

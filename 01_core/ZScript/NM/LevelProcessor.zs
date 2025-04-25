@@ -1,7 +1,7 @@
 class NMPostProcessor : LevelPostProcessor {
     protected void Apply(Name checksum, String mapname) {
 		// Health and Armor pickups disabled
-		bool id24 = Wads.FindLump("STAMMO24") >= 0;
+		bool id24 = Wads.FindLump("STAMMO24") != -1;
         for (int i = 0; i < GetThingCount(); i++) {
             int ednum = GetThingEdNum(i);
             if(ednum == 2011) {

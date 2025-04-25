@@ -13,7 +13,61 @@ class NMD2MapUnlockItem : Inventory {
     }
 }
 
+class NMD2MAP01Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
 class NMD2MAP02Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP03Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP04Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP05Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP06Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP07Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP09Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP10Unlock : NMD2MapUnlockItem {
+    Default {
+        Inventory.Amount 1;
+    }
+}
+
+class NMD2MAP11Unlock : NMD2MapUnlockItem {
     Default {
         Inventory.Amount 1;
     }

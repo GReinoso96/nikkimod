@@ -3,7 +3,8 @@ Class NMArmor5 : BasicArmorBonus {
 		Translation "117:124=160:167";
 		Radius 20;
 		Height 16;
-		Inventory.Pickupmessage "Picked up an armor shard.";
+		Tag "$NM_ARMORSHARD";
+		Inventory.Pickupmessage "$NM_PICK_ARMORSHARD";
 		Inventory.Icon "BON2A0";
 		Armor.Savepercent 33.335;
 		Armor.Saveamount 5;
@@ -23,7 +24,8 @@ Class NMArmor10 : BasicArmorBonus {
 		Translation "117:124=175:185";
 		Radius 20;
 		Height 16;
-		Inventory.Pickupmessage "Picked up an armor piece.";
+		Tag "$NM_ARMORPIECE";
+		Inventory.Pickupmessage "$NM_PICK_ARMORPIECE";
 		Inventory.Icon "BON2A0";
 		Armor.Savepercent 33.335;
 		Armor.Saveamount 10;
@@ -85,7 +87,8 @@ class NMRedArmor : BasicArmorPickup
 		Translation "112:127=173:188";
 		Radius 20;
 		Height 16;
-		Inventory.Pickupmessage "You got super armor!";
+		Tag "$NM_SUPERARMOR";
+		Inventory.Pickupmessage "$NM_PICK_SUPERARMOR";
 		Inventory.Icon "ARMRA0";
 		Armor.SavePercent 70;
 		Armor.SaveAmount 100;
@@ -106,7 +109,8 @@ Class NMHealth5 : Health {
 		+INVENTORY.ALWAYSPICKUP;
 		Inventory.Amount 3;
 		Inventory.MaxAmount 200;
-		Inventory.PickupMessage "Picked up a great health bonus.";
+		Tag "$NM_HEALTH5";
+		Inventory.PickupMessage "$NM_PICK_HEALTH5";
 	}
 	States {
 		Spawn:
@@ -122,7 +126,8 @@ Class NMHealth10 : Health {
 		+INVENTORY.ALWAYSPICKUP;
 		Inventory.Amount 6;
 		Inventory.MaxAmount 200;
-		Inventory.PickupMessage "Picked up a super health bonus.";
+		Tag "$NM_HEALTH10";
+		Inventory.PickupMessage "$NM_PICK_HEALTH10";
 	}
 	States {
 		Spawn:

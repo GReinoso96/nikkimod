@@ -1,5 +1,6 @@
 class NMD2PostProcessor : LevelPostProcessor {
     protected void Apply(Name checksum, String mapname) {
+		bool id24 = Wads.FindLump("STAMMO24") != -1;
 		if(mapname=="MAP01") {
 			// Randomly require a yellow card to open exit
 			if(random(1,100) >= 50) {
@@ -23,5 +24,5 @@ class NMD2PostProcessor : LevelPostProcessor {
 			// Nexus TP
 			AddThing(8200,(2336, 3104,0),0, SKILLS_ALL, MTF_SINGLE);
 		}
-    }
+	}
 }

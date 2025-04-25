@@ -11,7 +11,7 @@ adddefaultmap
 	rememberstate
 }
 
-map MAP50 "Nexus"
+map MAP50 lookup "NM_MAP_NEXUS"
 {
 	next = "MAP50"
 	secretnext = "MAP50"
@@ -34,4 +34,12 @@ doomednums {
 	8201 = "NMD2TeleportReturn"
 	8202 = "NMD2MAP01Prop"
 	8203 = "NMD2MAP02Prop"
+	8204 = "NMD2MAP03Prop"
+	8205 = "NMD2MAP04Prop"
+	8206 = "NMD2MAP05Prop"
+	8207 = "NMD2MAP06Prop"
+	8208 = "NMD2MAP07Prop"
+	8209 = "NMD2MAP09Prop"
+	8210 = "NMD2MAP10Prop"
+	8211 = "NMD2MAP11Prop"
 }

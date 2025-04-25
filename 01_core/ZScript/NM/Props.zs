@@ -10,7 +10,7 @@ class ShopProp : Actor
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "HealthBonus", 100, 1;
-		ShopProp.Buyable "Health Bonus";
+		ShopProp.Buyable "$NM_SHOP_HEALTHBONUS";
 		+SOLID
 	}
 	States
@@ -23,7 +23,7 @@ class ShopProp : Actor
 	override void CollidedWith(Actor other, bool passive) {
 		if(other.player) {
 			//DropItem drops = GetDropItems();
-			other.A_Print(default.buyable  .. " - " .. Health .. " coins\nPress 'Use' to buy");
+			other.A_Print(StringTable.Localize(default.buyable)  .. " - " .. Health .. " " .. StringTable.Localize("$NM_COIN") .. "\n" .. StringTable.Localize("$NM_SHOP_SPEND"));
 		}
 	}
 	
@@ -36,7 +36,7 @@ class ShopProp : Actor
 				
 				drop = dropList = GetDropItems();
 				if(dropList != null){
-					user.A_Print("Purchased!");
+					user.A_Print(StringTable.Localize("$NM_SHOP_PURCHASED"));
 					user.A_StartSound("nmod/ding", CHAN_ITEM, CHANF_UI);
 					while(dropList != null) {
 						user.A_GiveInventory(dropList.name, dropList.amount);
@@ -45,7 +45,7 @@ class ShopProp : Actor
 					return true;
 				}
 			} else {
-				user.A_Print("Not enough cash!");
+				user.A_Print(StringTable.Localize("$NM_SHOP_BROKE"));
 				user.A_StartSound("nmod/deny", CHAN_ITEM, CHANF_UI);
 			}
 		}
@@ -155,7 +155,7 @@ class NMShopShotgun : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "Shotgun", 100, 8;
-		ShopProp.Buyable "Shotgun";
+		ShopProp.Buyable "$TAG_SHOTGUN";
 		Health 400;
 		+SOLID
 	}
@@ -175,7 +175,7 @@ class NMShopSuperShotgun : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "SuperShotgun", 100, 8;
-		ShopProp.Buyable "Super Shotgun";
+		ShopProp.Buyable "$TAG_SUPERSHOTGUN";
 		Health 600;
 		+SOLID
 	}
@@ -195,7 +195,7 @@ class NMShopChaingun : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "Chaingun", 100, 50;
-		ShopProp.Buyable "Chaingun";
+		ShopProp.Buyable "$TAG_CHAINGUN";
 		Health 800;
 		+SOLID
 	}
@@ -215,7 +215,7 @@ class NMShopRocketLauncher : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "RocketLauncher", 100, 5;
-		ShopProp.Buyable "Rocket Launcher";
+		ShopProp.Buyable "$TAG_ROCKETLAUNCHER";
 		Health 1500;
 		+SOLID
 	}
@@ -235,7 +235,7 @@ class NMShopPlasmaRifle : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "PlasmaRifle", 100, 20;
-		ShopProp.Buyable "Plasma Rifle";
+		ShopProp.Buyable "$TAG_PLASMARIFLE";
 		Health 1000;
 		+SOLID
 	}
@@ -255,7 +255,7 @@ class NMShopIncinerator : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "ID24Incinerator", 100, 20;
-		ShopProp.Buyable "Incinerator";
+		ShopProp.Buyable "$TAG_ID24INCINERATOR";
 		Health 1000;
 		+SOLID
 	}
@@ -275,7 +275,7 @@ class NMShopBFG : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "BFG9000", 100, 30;
-		ShopProp.Buyable "BFG 9000";
+		ShopProp.Buyable "$TAG_BFG9000";
 		Health 5000;
 		+SOLID
 	}
@@ -295,7 +295,7 @@ class NMShopCalamityBlade : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "ID24CalamityBlade", 100, 30;
-		ShopProp.Buyable "Calamity Blade";
+		ShopProp.Buyable "$TAG_ID24CALAMITYBLADE";
 		Health 5000;
 		+SOLID
 	}
@@ -315,7 +315,7 @@ class NMShopArmorGreen : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "NMGreenArmor", 100, 30;
-		ShopProp.Buyable "Green Armor - 40% Protection";
+		ShopProp.Buyable "$NM_SHOP_ARMOR1";
 		Health 1000;
 		+SOLID
 	}
@@ -335,7 +335,7 @@ class NMShopArmorBlue : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "NMBlueArmor", 100, 30;
-		ShopProp.Buyable "Blue Armor - 50% Protection";
+		ShopProp.Buyable "$NM_SHOP_ARMOR2";
 		Health 2500;
 		+SOLID
 	}
@@ -355,7 +355,7 @@ class NMShopArmorRed : ShopProp
 		Height 40;
 		ProjectilePassHeight -16;
 		DropItem "NMRedArmor", 100, 30;
-		ShopProp.Buyable "Red Armor - 70% Protection";
+		ShopProp.Buyable "$NM_SHOP_ARMOR3";
 		Health 5000;
 		+SOLID
 	}
